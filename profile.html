@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet App- Profile</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="login.html">Login</a> |
+            <a href="dashboard.html">Home</a> |
+            <a href="transaction.html">Transactions</a> |
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    
+    <h2>My Profile</h2>
+
+    <main>
+        <div id="profile page">
+        <section id="personal-info">
+            <!-- Profile Info -->
+            <h2>Profile information</h2>
+            <form action="" method="post" id="profile-form">
+            <fieldset>
+                <legend>Basic Information</legend>
+                <p>
+                    <label>First Name:</label>
+                    <input type="text" value="Vinod" required>
+                </p>
+
+                <p>
+                    <label>Last Name:</label>
+                    <input type="text" value="Kumar" required>
+                </p>
+
+                <p>
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter the email">
+
+                    
+                </p>
+
+                <p>
+                    <label>Contact No:</label>
+                    <input type="tel" placeholder="Enter contact number">
+                </p>
+
+                <p>
+                    <label>Address:</label>
+                    <textarea rows="3" cols="30">560067</textarea>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">Save Changes</button>
+                <button type="reset">Cancel</button>
+            </p>
+            </form>
+        </section>
+
+        <section id="account-details">
+            <h2>Account details</h2>
+
+            <fieldset>
+                <legend>Wallet Information</legend>
+
+                <dl>
+                    <dt>Account type</dt>
+                    <dd><strong>Premium</strong></dd>
+
+                    <dt>Wallet balance</dt>
+                    <dd>&#8377; 1445.00</dd>
+
+                    <dt>Cashback balance</dt>
+                    <dd>&#8377; 80.00</dd>
+
+                    <dt>Account status</dt>
+                    <dd><strong>Active</strong></dd>
+                </dl>
+            </fieldset>
+        </section>
+
+        <section id="change-password">
+            <h2>Change password</h2>
+            <form action="" method="post" id="password-change-form">
+                <fieldset>
+                    <legend>Password</legend>
+
+                    <p>
+                        <label for="current-password">Current Password</label>
+                        <input type="password" id="current-password" name="current password" placeholder="Enter current password" required>
+
+                    </p>
+
+                    <p>
+                        <label for="new-password">New Password</label>
+                        <input type="password" id="new-password" name="new password" placeholder="min 8 char, upper, lower" minlength="8" required>
+
+                    </p>
+
+                    <p>
+                        <button type="submit">Change password</button>
+                        <button type="reset">Clear</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+        <hr>
+        <!-- Trusted devices -->
+        <section id="devices-section">
+            <fieldset>
+                <legend>Trusted Devices</legend>
+
+            <ol>
+                <li>My_phone<small>(added 01 Feb 2026)</small></li>
+                <li>My_tablet<small>(added 01 Feb 2026)</small></li>
+                <li>My_pc<small>(added 01 Feb 2026)</small></li>
+            </ol>
+
+            <form action="" method="post">
+                <p>
+                    <label for="new-device">Add Device</label>
+                    <input type="text" id="new-device" name="device-name" placeholder="e.g, my_device">
+
+                    <button type="submit">Add</button>
+                </p>
+            </form>
+            </fieldset>
+        </section>
+
+        <section id="preferances-section">
+            <fieldset>
+                <legend>Notification Preferances</legend>
+
+                <p>
+                    <!-- Email notifications -->
+                    <input type="checkbox" id="email-notif" name="email-notification" checked>
+                    <label for="email-notif" >Email Notifications</label>
+                </p>
+
+                <p>
+                    <!-- SMS notifications -->
+                    <input type="checkbox" id="sms-notif" name="sms-notifications">
+                    <label for="sms-notif">SMS Notifications</label>
+                </p>
+
+                <p>
+                    <!-- Transaction Alert -->
+                    <input type="checkbox" id="trns-alert" name="transaction-alert">
+                    <label for="trns-alert">Transaction Alerts</label>
+                </p>
+
+                <p>
+                    <!-- Monthly Statements -->
+                    <input type="checkbox" id="monthly-stmt" name="monthly-statements">
+                    <label for="monthly-stmt">Monthly Statements</label>
+                </p>
+            </fieldset>
+            <p> 
+                <button type="submit">Save Preferances</button>
+            </p>
+        </section>
+        
+        </div>
+    </main>
+
+    <hr>
+
+    <footer>
+        <small>Wallet App &copy; 2026 | <a href="login.html">Logout</a></small>
+    </footer>
+</body>
+</html>

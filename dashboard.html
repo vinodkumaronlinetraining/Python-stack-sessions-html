@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalletApp-dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Wallet App</h1>
+        <!-- navigation links -->
+         <nav>
+            <a href="login.html">Login</a> |
+            <a href="dashboard.html">Home</a> |
+            <a href="transaction.html">Transactions</a> |
+            <a href="profile.html">Profile</a>
+         </nav>
+    </header>
+    <hr>
+
+    <h1> Welcome back, Vinod</h1>
+    <p>Account Type: <strong>Premium</strong></p>
+
+
+    <main>
+
+        <!-- BALANCE SECTION -->
+        <section id="balance-section">
+            <dl>
+                <dt>Current Balance</dt>
+                <dd>&#8377; 1445.00</dd>
+
+                <dt>Account Status</dt>
+                <dd><strong>active</strong></dd>
+
+                <dt>Cashback Balance</dt>
+                <dd>&#8377; 80.00</dd>
+
+                <dt>Last updated</dt>
+                <dd><time datetime="2026-04-07">07 April 2026</time></dd>
+
+
+            </dl>
+
+            <p><a href="#add-transaction-section">+ Add transaction</a></p>
+        </section>
+
+        <hr>
+
+
+        <!-- ACCOUNT STATS -->
+         
+         <section id="quick-stats">
+            <h2>Quick Stats</h2>
+            <dl>
+                <dt>Total credits</dt>
+                <dd>&#8377; 2,500.00</dd>
+
+                <dt>Total Debits</dt>
+                <dd>&#8377; 1,050.00</dd>
+
+                <dt>No of Transactions</dt>
+                <dd>5</dd>
+
+                <dt>Transaction Limit</dt>
+                <dd>&#8377; 50,000</dd>
+            </dl>
+         </section>
+
+         <hr>
+
+         <!-- Add transaction -->
+         <section id="add-transaction-section">
+            <h2>Add transaction form</h2>
+            <form action="" method="post">
+                <p>
+                    <label for="amount">Amount (&#8377;):</label>
+                    <input type="number" id="amount" name="amount" placeholder="Enter the amount" min="1" max="49999" required>
+                </p>
+
+                <p>
+                    <label>Transaction Type</label>
+
+                    <input type="radio" id="debit" name="type" value="debit" checked>
+                    <label for="debit">Debit</label>
+
+                    <input type="radio" id="credit" name="type" value="credit">
+                    <label for="credit">Credit</label>
+
+                </p>
+
+                <p>
+                    <label for="device">Device:</label>
+                    <input type="text" id="device" name="device" placeholder="e.g: my_device" list="device-list" required>
+                    <datalist id="device-list">
+                        <option value="my_phone">
+                        <option value="my_ipad">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="pin">Transaction pin:</label>
+                    <input type="password" id="pin" name="pin" placeholder="4-digit pin" maxlength="4" required>
+                </p>
+
+                <p>
+                    <button type="submit">Add transaction</button>
+                    <button type="reset">Clear</button>
+                </p>
+            </form>
+         </section>
+         <hr>
+
+         <!-- TRANSACTIONS -->
+
+         <section id="recent-transactions-section">
+            <h2>Recent Transactions</h2>
+            <figure>
+                <figcaption>
+                    <small>Showing last 3 transactions. 
+                        <a href="transaction.html">View All</a>
+                    </small>
+                </figcaption>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Amount (Rs.)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>06 Mar 2026</td>
+                            <td>Credit</td>
+                            <td>+ 400</td>
+                        </tr>
+                        <tr>
+                            <td>04 Mar 2026</td>
+                            <td>Debit</td>
+                            <td>&minus; 200</td>
+                        </tr>
+                        <tr>
+                            <td>01 Mar 2026</td>
+                            <td>
+                                credit
+                            </td>
+                            <td>+ 500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </figure>
+         </section>
+    </main>
+    <hr>
+
+    <footer>
+        <p> Wallet App &copy; 2026 | <a href="login.html">Logout</a></p>
+    </footer>
+
+</body>
+</html>

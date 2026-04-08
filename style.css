@@ -1,0 +1,53 @@
+h1 {
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* class styles */
+.form-section {
+    background-color: blue;
+    border-radius: 5px;
+    
+    padding: 30px;
+    border: 2px solid black;
+    margin:auto ;
+}
+
+/* ID selector */
+#register-section{
+    background-color: rgba(252, 0, 0, 0.5);
+    padding: 20px;
+}
+
+/* grouping selectors */
+h1, h2, h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: blueviolet;
+}
+
+/* Targeting element inside a section */
+section ul{
+    line-height: 1.6;
+    color: darkblue;
+    font-size: 16px;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+/* Attribute selector- targeting a particular type of input */
+input[required]{
+    border: 2px solid red;
+}
+
+/* Targets elements when hovered */
+a:hover{
+    color: orange;
+    text-decoration: none;
+}
+
+/* Universal element */
+*{
+    box-sizing: border-box;
+}
+

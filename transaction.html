@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Vinod">
+    <title>WalletApp- Add Transaction</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="login.html">Login</a> |
+            <a href="dashboard.html">Home</a> |
+            <a href="transaction.html">Transactions</a> |
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    <main>
+        <div id="transaction-page">
+            <h1>Transaction History</h1>
+
+
+            <section id="search-transaction">
+                <h2>Search Transaction</h2>
+
+                <form class="search-transaction-form">
+                    <p>
+                        <label> Search by amount:</label>
+                        <input type="search" placeholder="e.g: 500">
+
+                    </p>
+
+                    <p>
+                        <label>Search by type:</label>
+                        <select>
+                            <option value="credit">Credit</option>
+                            <option value="debit">Debit</option>
+
+                        </select>
+                    </p>
+
+                    <p>
+                        <label>From Date:</label>
+                        <input type="date">
+
+                        <label>To Date:</label>
+                        <input type="date">
+
+                    </p>
+
+                    <button type="submit">Search</button>
+                    <button type="reset">Clear</button>
+                </form>
+            </section>
+            <hr>
+            <section id="table-section">
+                <h2>All transactions</h2>
+
+                <table border="1">
+                    <caption>
+                        Transaction records.
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Type</th>
+                            <th>Amount (&#8377;)</th>
+                            <th>Fee</th>
+                            <th>Net Amount (&#8377;)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>06 Mar 2026</td>
+                            <td>20:31</td>
+                            <td>Credit</td>
+                            <td>855.00</td>
+                            <td>8.55</td>
+                            <td>+ 846.45</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>07 Mar 2026</td>
+                            <td>08:31</td>
+                            <td>Debit</td>
+                            <td>450.00</td>
+                            <td>4.5</td>
+                            <td>&minus; 454.50</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>08 Mar 2026</td>
+                            <td>07:31</td>
+                            <td>Credit</td>
+                            <td>855.00</td>
+                            <td>8.55</td>
+                            <td>+ 846.45</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>09 Mar 2026</td>
+                            <td>20:31</td>
+                            <td>Debit</td>
+                            <td>200.00</td>
+                            <td>2.00</td>
+                            <td>&minus; 202.00</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section id="summary-section">
+                <h2>Summary</h2>
+
+                <dl>
+                    <dt>Total credits</dt>
+                    <dd>&#8377; 2300</dd>
+
+                    <dt>Total debits</dt>
+                    <dd>&#8377; 1500</dd>
+
+                    <dt>Total transactions</dt>
+                    <dd> 4</dd>
+
+                    <dt>Net Balance</dt>
+                    <dd>&#8377; 1544.00</dd>
+                </dl>
+            </section>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <small>wallet app &copy; 2026  | built by vinod | <a href="login.html">Logout</a></small>
+    </footer>
+</body>
+</html>
