@@ -25,3 +25,13 @@
 │   └─────────────────────┘   │
 └─────────────────────────────┘
 ```
+
+![alt text](flexbox.png)
+
+
+
+### The core idea — change layout at breakpoints
+
+- Desktop  (> 900px)  →  2 column grid,  full navbar
+- Tablet   (< 768px)  →  1 column,       smaller text
+- Mobile   (< 480px)  →  stacked,        hamburger menu
